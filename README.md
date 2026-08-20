@@ -36,3 +36,4 @@ beauty-salon/
      Then, open your web browser and navigate to `http://localhost:8000/beauty-salon/`.
 
    - If you are using VS Code, you can install the **Live Server** extension and click **Go Live** to launch and automatically reload changes.
+# Luna-Beauty-Salon
