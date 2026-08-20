@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  AWS_REGION: us-east-2
+  AWS_REGION: us-east-1
   ECR_REPOSITORY: luna_bee
   AWS_ACCOUNT_ID: "473479140221"
 
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Get source code
+      # 1. Get source caode
       - name: Checkout repository
         uses: actions/checkout@v4
 
