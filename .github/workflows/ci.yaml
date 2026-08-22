@@ -28,6 +28,10 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -Dsonar.projectKey=Luna-Beauty-Salon
+            -Dsonar.projectName=Luna-Beauty-Salon
 
       # 3. Configure AWS credentials
       - name: Configure AWS credentials
@@ -54,7 +58,7 @@ jobs:
           docker push \
             $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:${{ github.sha }}
 
-      # 7. Show image information
+      # 7. Show deployment artifact information
       - name: Deployment artifact information
         run: |
           echo "CI completed successfully"
