@@ -7,7 +7,7 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: luna_bee
+  ECR_REPOSITORY: luna-bee
   AWS_ACCOUNT_ID: "473479140221"
 
 jobs:
